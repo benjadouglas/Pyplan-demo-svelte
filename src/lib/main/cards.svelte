@@ -1,7 +1,7 @@
 <script>
 	import { tweened } from 'svelte/motion';
 
-	const _duration = 1000;
+	const _duration = 3000;
 
 	const pr0 = tweened(0, {
 		duration: _duration
@@ -54,13 +54,6 @@
 
 <style>
 
-	.card {
-		height: 500px;
-		font-size: 37.32px;
-		margin: 0 0 0 1%;
-		padding: 0;
-	}
-
 	.card-container {
 		font-family: 'Poppins', sans-serif;
 		font-size: 53.75px;
@@ -69,10 +62,16 @@
 		justify-content: center;
 		text-align: center;
 		width: 100%;
-
-		--yellow: #f4dc59;
+		height: 90%;
 		border-radius: 10px;
-		background-color: var(--yellow);
+		background-color: var(--color-primary);
+	}
+
+	.card {
+		height: 500px;
+		font-size: 37.32px;
+		margin: 0 0 0 1%;
+		padding: 0;
 	}
 
 	.progress-container {

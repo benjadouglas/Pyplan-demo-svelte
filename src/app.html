@@ -1,37 +1,50 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		%sveltekit.head%
-	</head>
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	%sveltekit.head%
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div class="header-container" style="display: contents">%sveltekit.body%</div>
+</body>
+
+<style >
 	
-	<body data-sveltekit-preload-data="hover">
-		<div class="header-container" style="display: contents">%sveltekit.body%</div>
-	</body>
+	:root {
+		/* Global sizes */
+		--font-size-h1: 59.72px;
+		--font-size-h2: 49.77px;
+		--font-size-h3: 41.47px;
+		--font-size-h4: 34.56px;
+		--font-size-h5: 28.8px;
+		--font-size-h6: 24px;
+		--font-size-p: 20px;
+		--font-size-small: 16.67px;
 
-	<style>
-		:root{
-			--font-size-h1: 59.72px;
-			--font-size-h2: 49.77px;
-			--font-size-h3: 41.47px;
-			--font-size-h4: 34.56px;
-			--font-size-h5: 28.8px;
-			--font-size-h6: 24px;
-			--font-size-p: 20px;
-			--font-size-small: 16.67px;
+		--font-weight-bold: 900;
+		--font-weight-semi-bold: 700;
+		--font-weight-regular: 500;
+		--font-weight-light: 300;
 
-			--font-weight-bold: 900;
-			--font-weight-semi-bold: 700;
-			--font-weight-regular: 400;
-		}
-		body{
-			display: flex;
-			background-color: #F1F5F9;
-		}
+		/* Global colors */
+		--bg-color-primary: #F1F5F9;
+		--color-primary: #f4dc59;
 
-	</style>
+		/* Buttons */
+		--font-size-button: var(--font-size-small); 
+		--font-weight-button: var(--font-weight-regular);
+	}
+
+	body {
+		display: flex;
+		background-color: var(--bg-color-primary);
+	}
+</style>
+
 </html>
